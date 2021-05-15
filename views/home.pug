@@ -6,11 +6,12 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Document
     body 
-        div 
-            h4 NO
-            h4 MOBEL_NAME 
-            h4 MENUFACTURE 
-            h4 COLOR 
-            h4 INCH 
-            h4 PRICE
-            hr
+        each laptop in laptops
+            div 
+                h4 #{laptop.laptop_no}
+                h4 #{laptop.model_name}
+                h4 #{laptop.menufacture}
+                h4 #{laptop.color}
+                h4 #{laptop.inch}
+                h4 #{lapto.price} 원
+                hr
